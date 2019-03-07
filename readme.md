@@ -2,7 +2,7 @@
 
 ## InteliJ CE
 
-[IntelliJ templates](main/java/readme.md)
+[IntelliJ templates](src/main/readme.md)
 
 ## Web.xml
 
