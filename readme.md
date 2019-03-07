@@ -128,5 +128,18 @@ request.getRequestDispatcher("path").include(request, response);
 request.getServletContext().getRequestDispatcher("/path").include(request, response);
 ```
 
+## Cookies
 
+```java
+Cookie myCookie = new Cookie("name", "Marek");
+myCookie.setMaxAge(Integer.MAX_VALUE);
+response.addCookie(myCookie);
+
+Optional<Cookie> myCookie = Arrays.stream(request.getCookies())
+    .filter(cookie -> cookie.getName().equals("name"))
+    .findFirst();
+myCookie.ifPresent(cookie -> outputStream.println("Welcome back " + cookie.getValue()));
+
+
+```
 
