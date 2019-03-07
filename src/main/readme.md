@@ -1,6 +1,4 @@
-# Servlets example
-
-## InteliJ templates
+## IntelliJ templates
 ### Servlet Class
 ```java
 #if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
