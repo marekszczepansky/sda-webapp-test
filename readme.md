@@ -116,16 +116,16 @@ public class FilterCharset implements Filter {
 // redirection relative to request
 response.sendRedirect("doList");
 // forward relative to request
-request.getRequestDispatcher("").forward(request, response);
+request.getRequestDispatcher("path").forward(request, response);
 // forward in root servlet context
-request.getServletContext().getRequestDispatcher("").forward(request, response);
+request.getServletContext().getRequestDispatcher("/path").forward(request, response);
 ```
 
 ## Include
 
 ```java
-request.getRequestDispatcher("").include(request, response);
-request.getServletContext().getRequestDispatcher("").include(request, response);
+request.getRequestDispatcher("path").include(request, response);
+request.getServletContext().getRequestDispatcher("/path").include(request, response);
 ```
 
 
