@@ -109,3 +109,24 @@ public class FilterCharset implements Filter {
 
 }
 ```
+
+## Redirection & forward
+
+```java
+// redirection relative to request
+response.sendRedirect("doList");
+// forward relative to request
+request.getRequestDispatcher("").forward(request, response);
+// forward in root servlet context
+request.getServletContext().getRequestDispatcher("").forward(request, response);
+```
+
+## Include
+
+```java
+request.getRequestDispatcher("").include(request, response);
+request.getServletContext().getRequestDispatcher("").include(request, response);
+```
+
+
+
