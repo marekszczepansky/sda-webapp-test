@@ -145,3 +145,5 @@ myCookie.ifPresent(cookie -> outputStream.println("Welcome back " + cookie.getVa
 
 [https://github.com/OWASP/owasp-java-encoder](https://github.com/OWASP/owasp-java-encoder)
 
+## Error handling
+[https://www.baeldung.com/servlet-exceptions](https://www.baeldung.com/servlet-exceptions)
