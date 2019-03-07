@@ -118,7 +118,7 @@ response.sendRedirect("doList");
 // forward relative to request
 request.getRequestDispatcher("path").forward(request, response);
 // forward in root servlet context
-request.getServletContext().getRequestDispatcher("/path").forward(request, response);
+this.getServletContext().getRequestDispatcher("/path").forward(request, response);
 ```
 
 ## Include
@@ -139,7 +139,9 @@ Optional<Cookie> myCookie = Arrays.stream(request.getCookies())
     .filter(cookie -> cookie.getName().equals("name"))
     .findFirst();
 myCookie.ifPresent(cookie -> outputStream.println("Welcome back " + cookie.getValue()));
-
-
 ```
+
+## HTML & JS injection
+
+[https://github.com/OWASP/owasp-java-encoder](https://github.com/OWASP/owasp-java-encoder)
 
